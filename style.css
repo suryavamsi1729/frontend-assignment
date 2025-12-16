@@ -218,8 +218,12 @@ body {
         flex-direction: row;
     }
     .hero-content{
-        
+        gap:4rem;
         max-width: 50%;
+    }
+    .hero-content h1{
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
     }
     .hero-image{
         
