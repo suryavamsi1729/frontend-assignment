@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <nav class="nav-container">
+    <ul class="nav-links" id="mobileMenu">
+      <li>Home</li>
+      <li>Order</li>
+      <li>Food</li>
+      <li>Restaurant</li>
+      <li>Testimonials</li>
+      <li>Contact Us</li>
+    </ul>
+    <img  src="images/menu-bar.png" alt="menu" class="menu-icon" id="menuToggle">
+    
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>LOREM IPSUM</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vivamus id est vitae dolor rhoncus tristique.
+      Maecenas metus quam, rhoncus euismod lorem in,
+      sollicitudin viverra eros.
+    </p>
+    <button>Click Me</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/hero-image.jpg" alt="Burger">
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="image-grid">
+    <img src="images/night-board.jpg" alt="night-board">
+    <img src="images/food-table.jpg" alt="food-table">
+    <img src="images/street-cafe.jpg" alt="street-cafe">
+  </div>
+  <div class="info-box">
+    <p class="small">LOREM IPSUM</p>
+    <h2>LOREM IPSUM<br>SET ADEMIR</h2>
+    <a href="#">
+      Click
+      <img src="images/arrow.png" alt="arrow">
+    </a>
+  </div>
+</section>
+
+</body>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+</script>
+</html>
